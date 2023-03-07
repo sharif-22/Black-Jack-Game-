@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Phudu", cursive;
+}
+::after {
+  font-size: 8px;
+  color: rgb(213, 85, 85);
+}
+body {
+  color: #d1e9ff;
+  background-color: #00337c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#lifes {
+  margin-bottom: 10px;
+}
+.main {
+  border: 1px solid cornflowerblue;
+  padding: 15px;
+  border-radius: 8px;
+}
+.main * {
+  margin: 5px;
+}
+.btns {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border: 1px rgb(93, 186, 93) solid;
+  border-radius: 2px;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+#play-again {
+  width: 100%;
+  background-color: #90ee90;
+  text-align: center;
+}
+#startGame {
+  background-color: #90ee90;
+}
+
+#newCard {
+  background-color: #20b2aa;
+}
+@media all and (min-width: 1024px) and (max-width: 1980px) {
+  .main {
+    min-width: 900px;
+    max-width: 1000px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .main {
+    width: 700px;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .main {
+    width: 450px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .main {
+    width: 350px;
+  }
+}
